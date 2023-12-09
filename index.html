@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto+Mono:wght@300&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae20eb4e30.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div data-aos="fade" data-aos-duration="10000" class="container">
+        <h1 style="color: aliceblue;">Weather App <i style="color: cyan; cursor: pointer; background-color: rgba(240, 248, 255, 0.129); padding: 8px 16px; border-radius: 5px; margin-left: 5px; font-size: 20px; " onclick="ref()" class="fa-solid fa-arrows-rotate"></i></h1>
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button onclick="getWeather()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div id="weather-container" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="condition"></p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 0,
+        duration: 1200,
+      });
+    </script>
+</body>
+</html>
