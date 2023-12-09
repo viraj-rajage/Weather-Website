@@ -51,6 +51,10 @@ button i{
 }
 #cityName , #temperature , #condition{
     color: aliceblue;
+    background-color: rgba(0, 255, 255, 0.086);
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 3px;
 }
 #cityInput{
     outline: none;
